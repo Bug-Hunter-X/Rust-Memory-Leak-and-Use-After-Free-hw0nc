@@ -1,0 +1,1 @@
+fn main() {    let mut v = vec![1, 2, 3];    let ptr = v.as_mut_ptr();    unsafe {        // Incorrect way of dropping the vector.  This will cause memory leak.        std::mem::drop(v);        *ptr = 10; // Use after free        println!("{:?}", *ptr);    }}
