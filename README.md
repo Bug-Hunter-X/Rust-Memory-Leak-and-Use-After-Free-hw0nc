@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Rust:  a use-after-free vulnerability that arises from improperly handling vector pointers.  The `bug.rs` file shows the erroneous code, leading to undefined behavior.  The corrected version is in `bugSolution.rs`, highlighting the safe way to manage memory.
